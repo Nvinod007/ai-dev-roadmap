@@ -37,3 +37,10 @@ else:
 # === 5. Your exercise ===
 # Call https://jsonplaceholder.typicode.com/users/1
 # Print the user's name and email.
+
+response_user = requests.get(
+    "https://jsonplaceholder.typicode.com/users/1",
+)
+user = response_user.json()
+print(f"User name: {user['name']}")
+print(f"User email: {user['email']}")

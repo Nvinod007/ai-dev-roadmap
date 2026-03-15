@@ -30,3 +30,8 @@ for i, topic in enumerate(topics):
 # === 4. Your exercise ===
 # Write a function that takes a list of numbers and returns their sum.
 # Then call it with [1, 2, 3, 4, 5] and print the result.
+
+def sum_list(numbers):
+    return sum(numbers)
+
+print(sum_list([1, 2, 3, 4, 5]))

@@ -45,3 +45,9 @@ print("Extracted content:", content)
 # === 5. Your exercise ===
 # Create a list of 2 message dicts (user + assistant).
 # Use json.dumps() to print it as a JSON string.
+
+messages = [
+    {"role": "user", "content": "Hello"},
+    {"role": "assistant", "content": "Hi there!"},
+]
+print(json.dumps(messages))
